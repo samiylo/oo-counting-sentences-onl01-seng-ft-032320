@@ -20,7 +20,6 @@ class String
   end
 
   def count_sentences
-    
-
+    self.split(/[.!?]/).reject {|input| input.empty?}.size
   end
 end
